@@ -1,16 +1,31 @@
-# React + Vite
+# 📋 Formulário Multistep - Avaliação de Produto
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é um formulário dinâmico de múltiplas etapas desenvolvido com **React.js** e **Vite**. Ele permite que o usuário passe por um fluxo de avaliação dividido em identificação, feedback por emojis e uma tela final de agradecimento com resumo dos dados.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **React.js**: Biblioteca principal para a construção da interface.
+* **React Icons**: Utilizado para os ícones de navegação e os emojis de satisfação (`bs`, `ai`, `gr`, `fi`).
+* **Vite**: Ferramenta de build para um ambiente de desenvolvimento rápido.
+* **CSS3**: Estilização personalizada para cada componente e transições.
+* **Custom Hooks**: Lógica separada para gerenciar o estado das etapas (`useForm.jsx`).
 
-## React Compiler
+## 🛠️ Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Fluxo Multistep**: Navegação entre etapas com botões de "Voltar" e "Avançar/Enviar".
+* **Persistência de Dados**: Os dados preenchidos são mantidos no estado global durante a navegação entre os componentes.
+* **Barra de Progresso**: Componente `Steps` que indica visualmente a fase atual do usuário.
+* **Avaliação Interativa**: Uso de ícones de emoji para selecionar o nível de satisfação.
 
-## Expanding the ESLint configuration
+## 📂 Estrutura de Arquivos Principal
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* `src/components/UserForm.jsx`: Coleta dados de identificação.
+* `src/components/ReviewForm.jsx`: Interface de avaliação com emojis e comentários.
+* `src/components/Thanks.jsx`: Resumo final e confirmação de envio.
+* `src/hooks/useForm.jsx`: Lógica de controle do passo atual (`currentStep`).
+
+## 🔧 Como Executar
+
+1. Clone o repositório:
+   ```bash
+   git clone [https://github.com/Luiz-4ugusto/Formulario_Multistep.git](https://github.com/Luiz-4ugusto/Formulario_Multistep.git)
